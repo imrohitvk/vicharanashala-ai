@@ -1,7 +1,10 @@
 ---
 layout: home
 title: Home
+permalink: /
 ---
+
+## Home
 
 Welcome to the Vicharanashala website.
 

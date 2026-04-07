@@ -1,9 +1,18 @@
-title: Vicharanashala Website
+title: Vicharanashala
 description: Website development for Vicharanashala.
 theme: minima
 
 url: "https://vicharanashala.github.io"
 baseurl: "/vicharanashala-ai"
+
+header_pages:
+  - index.md
+  - ourstory.md
+  - courses.md
+  - events.md
+  - research-blog.md
+  - initiatives.md
+  - contact.md
 
 plugins:
   - jekyll-feed
