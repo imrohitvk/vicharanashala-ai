@@ -49,3 +49,24 @@ $on-laptop:        800px !default;
   "minima/layout",
   "minima/syntax-highlighting"
 ;
+
+/*
+ * Full-width site override.
+ * Minima's default wrapper constrains both the header and page content to a centered column.
+ * This keeps the layout fluid while preserving readable side padding on large and small screens.
+ */
+.wrapper {
+  width: 100%;
+  max-width: none;
+  margin-right: 0;
+  margin-left: 0;
+  padding-right: clamp(1rem, 3vw, 3rem);
+  padding-left: clamp(1rem, 3vw, 3rem);
+  box-sizing: border-box;
+}
+
+.site-header .wrapper,
+.page-content .wrapper {
+  width: 100%;
+  max-width: none;
+}

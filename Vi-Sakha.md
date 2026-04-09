@@ -1,12 +1,13 @@
 ---
 layout: page
 title: Vi-Sakha
+page_title: Vi-Sakha — Reimagining Academic Support with AI  
 parent: Products
 permalink: /Vi-Sakha/
 ---
 
-# VI-Sakha — Reimagining Academic Support with AI  
-### An initiative by Vicharanashala, IIT Ropar  
+
+*An initiative by Vicharanashala, IIT Ropar*
 
 ---
 

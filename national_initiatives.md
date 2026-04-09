@@ -1,6 +1,7 @@
 ---
 layout: page
 title: National Initiatives
+page_title: National Initiatives
 parent: Initiatives
 permalink: /national_initiative/
 card_mode: generic
@@ -9,7 +10,7 @@ card_mode: generic
 
 Vicharanashala operates at the intersection of pedagogical research and national educational policy. By leading the design and implementation of pivotal programs, the lab contributes to shaping a future where Indian higher education is both technologically advanced and deeply human-centric.
 
-### Gurusetu: A National Mission for Faculty Excellence
+## **Gurusetu: A National Mission for Faculty Excellence**
 
 Gurusetu is a flagship initiative of the Ministry of Education, Government of India, with three Indian Institutes of Technology (IITs) serving as nodal centers. Vicharanashala is proud to be a key partner in this project, which serves as a cornerstone for faculty development under the Malaviya Mission.
 
@@ -19,7 +20,7 @@ Faculty members interested in the future of teaching can explore the vision and 
 
 ---
 
-### Capacity Building Program in Artificial Intelligence
+## **Capacity Building Program in Artificial Intelligence**
 
 Funded by the Ministry of Education, Government of India
 
