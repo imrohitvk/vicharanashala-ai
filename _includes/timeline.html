@@ -1,0 +1,125 @@
+<section class="our-story">
+  <div class="story-header">
+    <!-- <h1>Our Story</h1> -->
+    <p class="story-subtitle" align="left">From humble beginnings to building a foundation for educational innovation</p>
+  </div>
+
+  <div class="timeline">
+    {% for event in page.timeline %}
+    <div class="timeline-item">
+      <div class="timeline-marker">
+        <span class="timeline-icon">{{ event.icon }}</span>
+      </div>
+      <div class="timeline-content">
+        <span class="timeline-month">{{ event.month }}</span>
+        <h3 class="timeline-title">{{ event.title }}</h3>
+        <p class="timeline-description">{{ event.description }}</p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<style>
+  .our-story {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    font-family: inherit;
+  }
+
+  .story-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .story-header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: inherit;
+  }
+
+  .story-subtitle {
+    font-size: 0.95rem;
+    color: #888;
+    margin: 0;
+  }
+
+  .timeline {
+    position: relative;
+    padding-left: 2rem;
+  }
+
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 0.45rem;
+    top: 0.5rem;
+    bottom: 0.5rem;
+    width: 2px;
+    background: #e0e0e0;
+  }
+
+  .timeline-item {
+    position: relative;
+    margin-bottom: 2rem;
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .timeline-marker {
+    position: absolute;
+    left: -2rem;
+    width: 1rem;
+    height: 1rem;
+    background: #fff;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0.25rem;
+    font-size: 0.6rem;
+  }
+
+  .timeline-icon {
+    font-size: 0.7rem;
+    line-height: 1;
+  }
+
+  .timeline-content {
+    flex: 1;
+  }
+
+  .timeline-month {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #e07b39;
+    margin-bottom: 0.2rem;
+  }
+
+  .timeline-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 0 0.3rem 0;
+    color: inherit;
+  }
+
+  .timeline-description {
+    font-size: 0.88rem;
+    color: #666;
+    margin: 0;
+    line-height: 1.6;
+  }
+
+  @media (max-width: 600px) {
+    .our-story {
+      padding: 1.5rem 0.75rem;
+    }
+  }
+</style>
