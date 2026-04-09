@@ -5,7 +5,6 @@ permalink: /national_initiative/
 card_mode: generic
 ---
 
-**National Initiatives & Learning Innovation**
 
 Vicharanashala operates at the intersection of pedagogical research and national educational policy. By leading the design and implementation of pivotal programs, the lab contributes to shaping a future where Indian higher education is both technologically advanced and deeply human-centric.
 
