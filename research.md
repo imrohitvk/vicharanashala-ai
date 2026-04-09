@@ -1,7 +1,9 @@
 ---
-layout: research
+layout: card-layout
 title: Research
 permalink: /research/
+card_mode: research
+cards_start_heading: Projects
 ---
 
 # Research at VLED
@@ -19,7 +21,7 @@ Interdisciplinary projects at the intersection of education and cutting-edge tec
 
 ### Peer Evaluation System (PES)
 
-**Timeline:** 2023-2025  
+**Timeline:** 2023-Present  
 **Status:** In Progress  
 **GitHub:** [PES Repository](https://github.com/vicharanashala/PES)
 
@@ -35,7 +37,7 @@ PES is a scalable web tool that streamlines peer assessment in education. Design
 
 ### Spandan
 
-**Timeline:** 2025-2025  
+**Timeline:** 2025-Present  
 **Status:** In Progress  
 **GitHub:** [Poll Automation Repository](https://github.com/vicharanashala/poll-automation)
 
@@ -47,11 +49,11 @@ The Poll Automation project is a real-time classroom tool that uses live audio t
 
 - Real-time speech-to-text transcription system for live classes
 - Automated, context-aware poll generation with instructor override features
-- Seamless integration with dashboards (DDD) and feedback mechanisms (PES)
+- Seamless integration with dashboards (HP System) and feedback mechanisms (PES)
 
 ### ViBe
 
-**Timeline:** 2024-2025  
+**Timeline:** 2024-Present  
 **Status:** In Progress  
 **GitHub:** [ViBe Repository](https://github.com/vicharanashala/vibe)
 
@@ -65,18 +67,18 @@ ViBe is a comprehensive educational platform designed to enhance the learning ex
 - Personalized learning paths for students
 - Interactive content and community features for enhanced engagement
 
-### Dopamine Driving through Dashboard (DDD)
+### HP (Health Points) System
 
-**Timeline:** 2023-2025  
+**Timeline:** 2023-Present  
 **Status:** In Progress  
-**GitHub:** [DDD Repository](https://github.com/vicharanashala/DDD)
+**GitHub:** [HP Repository](https://github.com/vicharanashala/DDD)
 
-The DDD project develops centralized, interactive dashboards to drive motivation and engagement among stakeholders in educational research and development. Built with the MERN stack, DDD visualizes project progress, participation, and analytics across multiple initiatives at VLED Lab, enabling intuitive decision-making.
+The HP system powers a gamified motivation engine for learning. Each task or assignment on the platform is assigned an HP value; learners earn HP when they complete a milestone, and a penalty is applied when they miss it. This keeps progress visible, encourages consistent effort, and sustains engagement over time.
 
 **Focus Area:** Educational Technology
 
 **Key Outcomes**
 
-- Modular dashboard system for live tracking of research and product initiatives
-- Improved visibility into student/faculty engagement and contributions
-- Scalable design supporting multiple datasets and real-time visualization
+- Task-level HP scoring model for assignments and milestones
+- Reward-and-penalty loop that promotes consistency and accountability
+- Gamified progress dashboards for continuous learner motivation

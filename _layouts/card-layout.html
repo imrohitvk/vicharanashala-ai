@@ -1,0 +1,327 @@
+---
+layout: default
+---
+
+<article class="post">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    {% if page.summary %}<p class="post-description">{{ page.summary }}</p>{% endif %}
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+</article>
+
+<style>
+  .post .content-card {
+    border: 1px solid #d8dee4;
+    border-radius: 14px;
+    margin: 0 0 1rem;
+    background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+    box-shadow: 0 2px 6px rgba(15, 23, 42, 0.05);
+    overflow: hidden;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .post .content-card[open] {
+    border-color: #0f766e;
+    box-shadow: 0 8px 24px rgba(15, 118, 110, 0.12);
+  }
+
+  .post .content-card summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 1rem 1.1rem;
+  }
+
+  .post .content-card summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .post .card-summary {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0.7rem;
+  }
+
+  .post .card-summary-main {
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+    min-width: 0;
+  }
+
+  .post .card-title {
+    margin: 0;
+    font-size: 1.35rem;
+    font-weight: 800;
+    line-height: 1.2;
+    color: #475569;
+  }
+
+  .post .content-card:nth-of-type(4n + 1) .card-title:not(.theme-vibe):not(.theme-pes):not(.theme-hp):not(.theme-spandan) {
+    color: #6f8ccf;
+  }
+
+  .post .content-card:nth-of-type(4n + 2) .card-title:not(.theme-vibe):not(.theme-pes):not(.theme-hp):not(.theme-spandan) {
+    color: #c48fb7;
+  }
+
+  .post .content-card:nth-of-type(4n + 3) .card-title:not(.theme-vibe):not(.theme-pes):not(.theme-hp):not(.theme-spandan) {
+    color: #72b8aa;
+  }
+
+  .post .content-card:nth-of-type(4n + 4) .card-title:not(.theme-vibe):not(.theme-pes):not(.theme-hp):not(.theme-spandan) {
+    color: #d49a72;
+  }
+
+  .post .card-title.theme-vibe {
+    color: #f59e73;
+  }
+
+  .post .card-title.theme-pes {
+    color: #b18ad9;
+  }
+
+  .post .card-title.theme-hp {
+    color: #74c69d;
+  }
+
+  .post .card-title.theme-spandan {
+    color: #7fb3ff;
+  }
+
+  .post .card-meta {
+    margin: 0;
+    color: #334155;
+    font-size: 0.92rem;
+    font-weight: 600;
+    background: #e6fffb;
+    border-radius: 999px;
+    padding: 0.2rem 0.55rem;
+    display: inline-flex;
+    align-self: flex-start;
+  }
+
+  .post .card-link {
+    text-decoration: none;
+    border: 1px solid rgba(15, 118, 110, 0.28);
+    border-radius: 999px;
+    background: #ffffff;
+    width: 2.15rem;
+    height: 2.15rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .post .card-link:hover {
+    background: #e6fffb;
+    border-color: #0f766e;
+  }
+
+  .post .card-link svg {
+    width: 1.05rem;
+    height: 1.05rem;
+  }
+
+  .post .card-link svg path {
+    fill: #0f766e;
+  }
+
+  .post .content-card-body {
+    border-top: 1px solid #e8edf2;
+    padding: 0.95rem 1.1rem 1.1rem;
+    color: #334155;
+  }
+
+  .post .content-card-body p,
+  .post .content-card-body li {
+    color: #475569;
+  }
+
+  .post .content-card-body strong {
+    color: #0f766e;
+  }
+
+  .post .content-card-body a {
+    color: #0f766e;
+    text-decoration-color: rgba(15, 118, 110, 0.45);
+  }
+
+  .post .content-card-body p:first-child,
+  .post .content-card-body h4:first-child {
+    margin-top: 0;
+  }
+
+  @media (max-width: 640px) {
+    .post .card-summary {
+      align-items: flex-start;
+    }
+
+    .post .card-link {
+      margin-top: 0.1rem;
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var content = document.querySelector(".post .post-content");
+    if (!content) {
+      return;
+    }
+
+    var cardMode = {{ page.card_mode | default: "generic" | jsonify }};
+    var startHeading = {{ page.cards_start_heading | default: "" | jsonify }};
+    var startAtNode = content.firstElementChild;
+
+    if (startHeading) {
+      var headings = Array.prototype.slice.call(content.querySelectorAll("h2"));
+      var startHeadingNode = headings.find(function (h) {
+        return h.textContent.trim().toLowerCase() === String(startHeading).trim().toLowerCase();
+      });
+      if (!startHeadingNode) {
+        return;
+      }
+      startAtNode = startHeadingNode.nextElementSibling;
+    }
+
+    var sections = [];
+    var node = startAtNode;
+
+    while (node) {
+      if (startHeading && node.tagName === "H2") {
+        break;
+      }
+
+      if (node.tagName === "H3") {
+        var titleNode = node;
+        var bodyNodes = [];
+        node = node.nextElementSibling;
+
+        while (node && node.tagName !== "H3" && !(startHeading && node.tagName === "H2")) {
+          bodyNodes.push(node);
+          node = node.nextElementSibling;
+        }
+
+        sections.push({ titleNode: titleNode, bodyNodes: bodyNodes });
+        continue;
+      }
+
+      node = node.nextElementSibling;
+    }
+
+    if (sections.length === 0) {
+      return;
+    }
+
+    var anchor = document.createComment("content-cards-anchor");
+    content.insertBefore(anchor, sections[0].titleNode);
+    var fragment = document.createDocumentFragment();
+
+    sections.forEach(function (section) {
+      var details = document.createElement("details");
+      details.className = "content-card";
+
+      var summary = document.createElement("summary");
+      var summaryWrap = document.createElement("div");
+      summaryWrap.className = "card-summary";
+
+      var summaryMain = document.createElement("div");
+      summaryMain.className = "card-summary-main";
+
+      var title = document.createElement("h3");
+      title.className = "card-title";
+      title.textContent = section.titleNode.textContent.trim();
+
+      if (cardMode === "research") {
+        var normalizedTitle = title.textContent.toLowerCase();
+        if (normalizedTitle.indexOf("vibe") !== -1) {
+          title.classList.add("theme-vibe");
+        } else if (normalizedTitle.indexOf("pes") !== -1) {
+          title.classList.add("theme-pes");
+        } else if (normalizedTitle.indexOf("hp") !== -1 || normalizedTitle.indexOf("health points") !== -1 || normalizedTitle.indexOf("ddd") !== -1 || normalizedTitle.indexOf("digital divya drishti") !== -1) {
+          title.classList.add("theme-hp");
+        } else if (normalizedTitle.indexOf("spandan") !== -1) {
+          title.classList.add("theme-spandan");
+        }
+      }
+
+      summaryMain.appendChild(title);
+
+      var sectionText = section.bodyNodes
+        .map(function (el) { return el.textContent; })
+        .join(" ")
+        .replace(/\s+/g, " ");
+
+      if (cardMode === "research") {
+        var timelineMatch = sectionText.match(/Timeline:\s*([0-9]{4}\s*-\s*(?:[0-9]{4}|Present|Ongoing))/i);
+        if (timelineMatch) {
+          var timeline = document.createElement("p");
+          timeline.className = "card-meta";
+          timeline.textContent = "Timeline: " + timelineMatch[1].replace(/\s+/g, "");
+          summaryMain.appendChild(timeline);
+        }
+      }
+
+      summaryWrap.appendChild(summaryMain);
+
+      if (cardMode === "research") {
+        var githubLink = section.bodyNodes
+          .map(function (el) { return el.querySelector('a[href*="github.com"]'); })
+          .find(function (a) { return !!a; });
+
+        if (githubLink) {
+          var link = document.createElement("a");
+          link.className = "card-link";
+          link.href = githubLink.href;
+          link.target = "_blank";
+          link.rel = "noopener noreferrer";
+          link.setAttribute("aria-label", "Open GitHub repository");
+          link.title = "Open GitHub repository";
+          link.innerHTML = '<svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>';
+          link.addEventListener("click", function (event) {
+            event.stopPropagation();
+          });
+          summaryWrap.appendChild(link);
+        }
+      }
+
+      summary.appendChild(summaryWrap);
+      details.appendChild(summary);
+
+      var body = document.createElement("div");
+      body.className = "content-card-body";
+      section.bodyNodes.forEach(function (el) {
+        body.appendChild(el);
+      });
+      details.appendChild(body);
+
+      if (section.titleNode.parentNode) {
+        section.titleNode.parentNode.removeChild(section.titleNode);
+      }
+      fragment.appendChild(details);
+    });
+
+    content.insertBefore(fragment, anchor);
+    anchor.parentNode.removeChild(anchor);
+
+    var cards = document.querySelectorAll(".post .content-card");
+    cards.forEach(function (card) {
+      card.addEventListener("toggle", function () {
+        if (!card.open) {
+          return;
+        }
+        cards.forEach(function (other) {
+          if (other !== card) {
+            other.open = false;
+          }
+        });
+      });
+    });
+  });
+</script>

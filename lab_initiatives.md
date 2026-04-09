@@ -1,7 +1,8 @@
 ---
-layout: page
+layout: card-layout
 title: VicharanaShala Lab Initiatives
 permalink: /lab_initiatives/
+card_mode: generic
 ---
 
 ## VicharanaShala Lab Initiatives
