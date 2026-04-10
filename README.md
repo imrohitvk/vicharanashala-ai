@@ -4,7 +4,7 @@ This repository is used to set up and manage the official Vicharanashala website
 
 We are migrating the existing React website into this repository and will host the live site on:
 
-- https://vicharanashala.ai
+- vicharanashala.github.io/vicharanashala-ai
 
 ## Project Goals
 
