@@ -3,6 +3,7 @@ layout: page
 title: ViBe
 page_title: ViBe - The Future of Learning
 parent: Products
+order: 1
 ---
 
 

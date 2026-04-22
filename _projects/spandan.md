@@ -3,6 +3,7 @@ layout: page
 title: Spandan
 page_title: Spandan - AI-Powered Real-Time Engagement Automation System
 parent: Products
+order: 2
 ---
 
 *Like a pulse that reveals what lies within,*

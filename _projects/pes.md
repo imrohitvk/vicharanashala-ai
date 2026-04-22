@@ -3,6 +3,7 @@ layout: page
 title: PES
 page_title: "PES: An Intelligent Peer Evaluation System with Anonymity and Quality Control"
 parent: Products
+order: 4
 ---
 
 *Where evaluation meets fairness and trust,*  

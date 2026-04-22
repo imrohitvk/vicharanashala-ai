@@ -3,6 +3,7 @@ layout: page
 title: Vi-Notes
 page_title: Vi-Notes - Authenticity Verification Platform for Human-Written Content
 parent: Products
+order: 6
 ---
 
 

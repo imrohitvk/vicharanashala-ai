@@ -47,7 +47,7 @@
                 {%- endfor -%}
                 {%- if is_parent -%}
                   {%- assign child_pages = site.pages | where: "parent", my_page.title -%}
-                  {%- assign child_projects = site.projects | where: "parent", my_page.title -%}
+                  {%- assign child_projects = site.projects | where: "parent", my_page.title | sort: "order" -%}
                   {%- assign all_children = child_pages | concat: child_projects -%}
                   {%- if all_children.size > 0 -%}
                   <div class="dropdown">
@@ -86,7 +86,7 @@
             {%- if parent != "" -%}
               {%- unless processed_parents contains parent -%}
                 {%- assign child_pages = site.pages | where: "parent", parent -%}
-                {%- assign child_projects = site.projects | where: "parent", parent -%}
+                {%- assign child_projects = site.projects | where: "parent", parent | sort: "order" -%}
                 {%- assign all_children = child_pages | concat: child_projects -%}
                 {%- if all_children.size > 0 -%}
                 <div class="dropdown">
