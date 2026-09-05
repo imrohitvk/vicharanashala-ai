@@ -201,7 +201,7 @@ fetch('{{ site.baseurl }}/assets/data/india.geojson')
       <div class="tl-icon tl-next-icon"><span class="tl-pulse-ring"></span>→</div>
       <div class="tl-date">August–September 2026</div>
       <div class="tl-title">What's Next?</div>
-      <div class="tl-desc">Three things are taking shape — <strong>Guru Vaani</strong>, a faculty development programme reaching educators across the country; <strong>Samagra</strong>, a credited internship; and <strong>Teacharcha</strong>, a community space for teachers. The story is still being written.</div>
+      <div class="tl-desc">Three things are taking shape — <strong>Vriddhi</strong>, a faculty development programme reaching educators across the country; <strong>Samagra</strong>, a credited internship; and <strong>Teacharcha</strong>, a community space for teachers. The story is still being written.</div>
     </div>
 
   </div>

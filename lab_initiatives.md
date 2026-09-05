@@ -12,12 +12,12 @@ Vicharanashala works at the intersection of pedagogy, technology, and reflective
 
 <div class="initiative-grid">
 
-  <a href="{{ site.baseurl }}/initiatives/guru-vaani/" class="initiative-card">
+  <a href="{{ site.baseurl }}/initiatives/vriddhi/" class="initiative-card">
     <div class="initiative-card-icon"><i class="ph ph-chalkboard-teacher"></i></div>
     <div class="initiative-card-body">
-      <div class="initiative-card-title">Guru Vaani</div>
+      <div class="initiative-card-title">Vriddhi</div>
       <p class="initiative-card-desc">An eight-week online faculty development programme built around one question — what will you do differently in your classroom next term? Four pillars, all of them required, and a certificate that issues on completion rather than attendance.</p>
-      <span class="initiative-card-link">Explore Guru Vaani →</span>
+      <span class="initiative-card-link">Explore Vriddhi →</span>
     </div>
   </a>
 

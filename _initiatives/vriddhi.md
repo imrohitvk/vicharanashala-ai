@@ -1,13 +1,13 @@
 ---
 layout: default
-title: Guru Vaani
-permalink: /initiatives/guru-vaani/
+title: Vriddhi
+permalink: /initiatives/vriddhi/
 ---
 
 <div class="initiative-page-hero">
   <a href="{{ site.baseurl }}/lab_initiatives/" class="initiative-back"><i class="ph ph-arrow-left"></i> Lab Initiatives</a>
   <p class="story-label"><i class="ph ph-chalkboard-teacher"></i> Lab Initiative</p>
-  <h1 class="initiative-page-h">Guru Vaani</h1>
+  <h1 class="initiative-page-h">Vriddhi</h1>
   <p class="initiative-page-tag">An eight-week faculty development programme, run online by Vicharanashala — the Lab for Education Design at IIT Ropar.</p>
 </div>
 
@@ -123,7 +123,7 @@ The NOC is one page. Two parts of it are your HOD's rather than yours: that they
 </div>
 
 <style>
-/* ── Guru Vaani page figures ──
+/* ── Vriddhi page figures ──
    Scoped to this page only. Every class is prefixed gv- so nothing here can
    affect the rest of the site. Colours match the site palette:
    #e07020 orange, #3ab7bf teal, #1a1a1a ink, #efefec grey, #e2e2de border. */
