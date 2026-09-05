@@ -9,10 +9,11 @@ $base-line-height: 1.72 !default;
 
 $spacing-unit: 30px !default;
 
-// ── Colour palette (grayscale) ──
+// ── Colour palette (brand: from Vicharanashala logo) ──
 $text-color:       #1a1a1a !default;
 $background-color: #f9f9f7 !default;
-$brand-color:      #1a1a1a !default;
+$brand-color:      #e48f38 !default;   // logo orange
+$brand-teal:       #42a6ac !default;   // logo teal
 
 $grey-color:       #767676 !default;
 $grey-color-light: #e2e2de !default;
@@ -217,8 +218,8 @@ a {
   }
 
   &:hover {
-    color: $grey-color-dark;
-    text-decoration-color: $grey-color;
+    color: $brand-color;
+    text-decoration-color: $brand-color;
   }
 }
 
@@ -977,7 +978,7 @@ table {
 
 // Hero — dark opening
 .home-hero {
-  background: $text-color;
+  background: $brand-teal;
   padding: 2.5rem 0 3rem;
 
   .home-eyebrow {
@@ -1015,17 +1016,17 @@ table {
   font-size: 0.88rem;
   font-weight: 500;
   letter-spacing: 0.02em;
-  color: rgba(255,255,255,0.65);
+  color: rgba(255,255,255,0.9);
   text-decoration: none;
-  border-bottom: 1px solid rgba(255,255,255,0.25);
+  border-bottom: 1px solid rgba(255,255,255,0.45);
   padding-bottom: 2px;
   transition: color 0.15s, border-color 0.15s;
 
-  &:visited { color: rgba(255,255,255,0.65); }
+  &:visited { color: rgba(255,255,255,0.9); }
 
   &:hover {
-    color: #f9f9f7;
-    border-color: rgba(255,255,255,0.6);
+    color: #ffffff;
+    border-color: #ffffff;
     text-decoration: none;
   }
 }
@@ -1068,14 +1069,14 @@ table {
 
 .hs-light { background: $background-color; }
 .hs-mid   { background: #efefec; }
-.hs-dark  { background: $text-color; }
+.hs-dark  { background: $brand-teal; }
 
 .home-label {
   font-size: 0.72rem;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: $grey-color;
+  color: $brand-color;
   margin-bottom: 1rem;
   display: flex;
   align-items: center;
@@ -1083,7 +1084,7 @@ table {
 }
 
 .home-label-inv {
-  color: rgba(255,255,255,0.4);
+  color: rgba(255,255,255,0.9);
 }
 
 .home-section-h {
@@ -1242,11 +1243,11 @@ table {
 
 .track-link {
   font-size: 0.82rem;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.04em;
-  color: rgba(255,255,255,0.75);
+  color: rgba(255,255,255,0.95);
   text-decoration: none;
-  border-bottom: 1px solid rgba(255,255,255,0.25);
+  border-bottom: 1px solid rgba(255,255,255,0.45);
   padding-bottom: 1px;
   transition: color 0.15s, border-color 0.15s;
 
@@ -1338,7 +1339,7 @@ table {
 
 // ── Page quote (epigraph) ──
 .page-quote {
-  border-left: 3px solid #e07020;
+  border-left: 3px solid #e48f38;
   margin: 0 0 2rem;
   padding: 0.25rem 0 0.25rem 1rem;
   font-style: italic;
@@ -1620,8 +1621,8 @@ table {
 
   .audience-card-link {
     font-size: 0.82rem;
-    font-weight: 500;
-    color: $text-color;
+    font-weight: 600;
+    color: $brand-color;
     margin-top: 0.4rem;
   }
 }
@@ -1929,8 +1930,8 @@ table {
   box-shadow: 0 0 0 1px #ccc;
 }
 
-.reach-dot-faculty { background: #e07020; }
-.reach-dot-student { background: #3ab7bf; }
+.reach-dot-faculty { background: #e48f38; }
+.reach-dot-student { background: #42a6ac; }
 .reach-dot-both    { background: #8a5ab7; }
 
 #reach-map {
@@ -2330,7 +2331,7 @@ table {
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background: #e07020;
+  background: #e48f38;
   flex-shrink: 0;
   animation: sdl-blink 1.6s ease-in-out infinite;
 }
@@ -2396,7 +2397,7 @@ table {
   display: inline-block;
   width: 3px;
   height: 4px;
-  background: #3ab7bf;
+  background: #42a6ac;
   border-radius: 2px;
   animation: sdl-wave 0.9s ease-in-out infinite;
 
@@ -2424,7 +2425,7 @@ table {
 
 .sdl-cursor {
   display: inline-block;
-  color: #3ab7bf;
+  color: #42a6ac;
   animation: sdl-cur 1s step-end infinite;
   margin-left: 1px;
 }
@@ -2474,7 +2475,7 @@ table {
   font-weight: 600;
   letter-spacing: 0.07em;
   text-transform: uppercase;
-  color: #e07020;
+  color: #e48f38;
   margin-bottom: 0.6rem;
 }
 
@@ -2558,7 +2559,7 @@ table {
 
 .sdl-fill {
   height: 100%;
-  background: #3ab7bf;
+  background: #42a6ac;
   border-radius: 3px;
   width: 0;
   transition: width 0.75s cubic-bezier(0.4, 0, 0.2, 1);
@@ -2597,7 +2598,7 @@ table {
 
 .sdl-rank { font-size: 0.63rem; color: #767676; width: 0.9rem; flex-shrink: 0; }
 .sdl-name { flex: 1; color: #1a1a1a; font-weight: 500; }
-.sdl-score { color: #3ab7bf; font-weight: 600; font-size: 0.78rem; }
+.sdl-score { color: #42a6ac; font-weight: 600; font-size: 0.78rem; }
 
 // ── Spandan scenario tabs ──
 .scenario-tabs { margin: 1.5rem 0 0; border: 1px solid #e2e2de; border-radius: 10px; overflow: hidden; }
@@ -2611,14 +2612,14 @@ table {
 }
 .scenario-panel { display: none; padding: 1.5rem 1.4rem; background: #fff; &.active { display: block; } }
 .scenario-panel-head { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.75rem; }
-.scenario-icon { font-size: 1.3rem; color: #e07020; }
+.scenario-icon { font-size: 1.3rem; color: #e48f38; }
 .scenario-title { font-size: 0.95rem; font-weight: 600; color: #1a1a1a; }
 .scenario-panel p { font-size: 0.88rem; color: #444; line-height: 1.65; margin-bottom: 0.65rem; &:last-of-type { margin-bottom: 0; } }
 .scenario-stat {
   display: inline-flex; align-items: center; gap: 0.4rem; background: #efefec;
   border-radius: 6px; padding: 0.3rem 0.7rem; font-size: 0.75rem; font-weight: 500;
   color: #1a1a1a; margin-top: 0.5rem;
-  i { color: #3ab7bf; }
+  i { color: #42a6ac; }
 }
 
 // ── Spandan roadmap ──
@@ -2667,7 +2668,7 @@ $fln-ink:       #1a1a1a;   // dark text (matches brand)
 $fln-ink-soft:  #3a3a3a;   // body text
 $fln-mute:      #767676;   // muted text (matches brand grey)
 $fln-rule:      #e2e2de;   // subtle border (matches brand)
-$fln-accent:    #e07020;   // brand orange (single accent)
+$fln-accent:    #e48f38;   // brand orange (single accent)
 
 .fln-project {
   font-family: $base-font-family;
@@ -3035,7 +3036,7 @@ $fln-accent:    #e07020;   // brand orange (single accent)
 }
 .impact-callout {
   background: #fff;
-  border: 1.5px solid #e07020;
+  border: 1.5px solid #e48f38;
   border-radius: 4px;
   padding: 1rem 1.2rem;
   font-size: 0.95rem;
@@ -3106,7 +3107,7 @@ $fln-accent:    #e07020;   // brand orange (single accent)
 // Tenali project page — adaptive math learning platform
 // Scoped under .tnl-* so rules never leak to other pages.
 // Reuses the brand palette (#1a1a1a, #f9f9f7, #767676, #e2e2de,
-// #e07020 brand-orange, #3ab7bf teal, #1a7a40 success, #b85a00
+// #e48f38 brand-orange, #42a6ac teal, #1a7a40 success, #b85a00
 // warning) and the same easing curves as existing animations.
 // ════════════════════════════════════════════════════════════
 
@@ -3262,7 +3263,7 @@ $fln-accent:    #e07020;   // brand orange (single accent)
     background: conic-gradient(
       from var(--mx, 0deg),
       $brand-color,
-      #3ab7bf,
+      #42a6ac,
       #f5b6c0,
       $brand-color
     );
@@ -3292,4 +3293,73 @@ $fln-accent:    #e07020;   // brand orange (single accent)
   .tnl-screenshot { opacity: 1; transform: none; }
   .tnl-screenshot::before,
   .tnl-screenshot::after { display: none; }
+}
+
+// ── Initiative cards (shared: lab_initiatives, vichara_logs, national_initiatives) ──
+.initiative-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.initiative-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 1.6rem 1.8rem;
+  border: 1px solid $grey-color-light;
+  border-radius: 8px;
+  background: #fff;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.initiative-card:hover {
+  border-color: $text-color;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.07);
+  text-decoration: none;
+}
+
+.initiative-card-icon {
+  flex-shrink: 0;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #efefec;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  color: $brand-color;
+  margin-top: 0.1rem;
+}
+
+.initiative-card-body { flex: 1; }
+
+.initiative-card-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: $text-color;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.4rem;
+}
+
+.initiative-card-desc {
+  font-size: 0.88rem;
+  color: #555;
+  line-height: 1.65;
+  margin: 0 0 0.7rem 0;
+}
+
+.initiative-card-link {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: $brand-color;
+  letter-spacing: 0.01em;
+}
+
+@media (max-width: 600px) {
+  .initiative-card { flex-direction: column; gap: 1rem; }
 }

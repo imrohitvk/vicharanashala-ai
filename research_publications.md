@@ -95,7 +95,7 @@ A curated record of research from Vicharanashala — spanning the work of the Pr
 .pub-gs-link {
   font-size: 0.82rem;
   font-weight: 500;
-  color: #e07020;
+  color: #e48f38;
   text-decoration: none;
   letter-spacing: 0.01em;
 }
@@ -116,7 +116,7 @@ A curated record of research from Vicharanashala — spanning the work of the Pr
   text-align: right;
   font-size: 0.82rem;
   font-weight: 700;
-  color: #e07020;
+  color: #e48f38;
   padding-top: 0.15rem;
   letter-spacing: -0.01em;
 }
@@ -128,7 +128,7 @@ A curated record of research from Vicharanashala — spanning the work of the Pr
   line-height: 1.45;
   text-decoration: none;
 }
-a.pub-title:hover { color: #e07020; text-decoration: none; }
+a.pub-title:hover { color: #e48f38; text-decoration: none; }
 .pub-meta {
   font-size: 0.8rem;
   color: #767676;

@@ -46,8 +46,8 @@ If it returns output, CSS is compiling correctly.
 - Grey (text muted): `#767676`
 - Border: `#e2e2de`
 - Dark text on dark: `#f9f9f7`
-- Brand orange (logo icon, faculty map pins): `#e07020`
-- Brand teal (logo icon, student map pins): `#3ab7bf`
+- Brand orange (logo icon, faculty map pins): `#e48f38`
+- Brand teal (logo icon, student map pins): `#42a6ac`
 
 **Typography:** Inter (loaded via Google Fonts in head.html), 17px base, 1.72 line-height
 
@@ -116,8 +116,8 @@ Basemap: CARTO light (clean, minimal).
 - **To add a city:** edit `_data/reach_cities.yml` directly on GitHub — no code knowledge needed
 
 **Pin colours:**
-- Faculty: orange `#e07020`
-- Students: teal `#3ab7bf`
+- Faculty: orange `#e48f38`
+- Students: teal `#42a6ac`
 - Both: purple `#8a5ab7`
 
 ---

@@ -68,8 +68,8 @@ var map = L.map('reach-map', {
   attributionControl: false
 });
 
-var facultyStyle = { radius: 4, fillColor: '#e07020', color: '#fff', weight: 1, opacity: 1, fillOpacity: 0.9 };
-var studentStyle = { radius: 4, fillColor: '#3ab7bf', color: '#fff', weight: 1, opacity: 1, fillOpacity: 0.9 };
+var facultyStyle = { radius: 4, fillColor: '#e48f38', color: '#fff', weight: 1, opacity: 1, fillOpacity: 0.9 };
+var studentStyle = { radius: 4, fillColor: '#42a6ac', color: '#fff', weight: 1, opacity: 1, fillOpacity: 0.9 };
 var bothStyle    = { radius: 5, fillColor: '#8a5ab7', color: '#fff', weight: 1, opacity: 1, fillOpacity: 0.9 };
 
 function drawCities() {
@@ -232,7 +232,7 @@ fetch('{{ site.baseurl }}/assets/data/india.geojson')
   top: 0;
   width: 2px;
   height: 0;
-  background: #e07020;
+  background: #e48f38;
   pointer-events: none;
 }
 
@@ -274,7 +274,7 @@ fetch('{{ site.baseurl }}/assets/data/india.geojson')
 
 .tl-item.visible:hover .tl-icon {
   transform: scale(1.18);
-  border-color: #e07020;
+  border-color: #e48f38;
 }
 
 .tl-date {
@@ -303,7 +303,7 @@ fetch('{{ site.baseurl }}/assets/data/india.geojson')
 
 .tl-next-icon {
   position: relative;
-  border-color: #e07020 !important;
+  border-color: #e48f38 !important;
   background: #fff7f2 !important;
   font-size: 14px;
 }
@@ -317,7 +317,7 @@ fetch('{{ site.baseurl }}/assets/data/india.geojson')
   position: absolute;
   inset: -4px;
   border-radius: 50%;
-  border: 2px solid #e07020;
+  border: 2px solid #e48f38;
   animation: tlPulse 2s ease-out infinite;
 }
 

@@ -61,7 +61,7 @@ permalink: /projects/fln/
       <div class="impact-pyramid">
         <svg class="impact-pyramid-svg" viewBox="0 0 360 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Three-tier pyramid: low-skilled workforce at top, poor secondary performance in the middle, millions of children with weak foundational literacy and numeracy at the base">
           <!-- Tier 1 (top, narrowest, dark orange) -->
-          <polygon points="180,0 240,106.67 120,106.67" fill="#e07020" />
+          <polygon points="180,0 240,106.67 120,106.67" fill="#e48f38" />
           <text x="180" y="84" text-anchor="middle" fill="#f9f9f7" font-family="Inter, sans-serif" font-size="11" font-weight="500">
             <tspan x="180" dy="0">Low-skilled</tspan>
             <tspan x="180" dy="13">workforce</tspan>

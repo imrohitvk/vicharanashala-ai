@@ -126,7 +126,7 @@ The NOC is one page. Two parts of it are your HOD's rather than yours: that they
 /* ── Vriddhi page figures ──
    Scoped to this page only. Every class is prefixed gv- so nothing here can
    affect the rest of the site. Colours match the site palette:
-   #e07020 orange, #3ab7bf teal, #1a1a1a ink, #efefec grey, #e2e2de border. */
+   #e48f38 orange, #42a6ac teal, #1a1a1a ink, #efefec grey, #e2e2de border. */
 
 .gv-stats {
   display: grid;
@@ -195,7 +195,7 @@ The NOC is one page. Two parts of it are your HOD's rather than yours: that they
 .gv-pillar-bar {
   font-size: 0.76rem;
   font-weight: 600;
-  color: #e07020;
+  color: #e48f38;
   border-top: 1px solid #efefec;
   padding-top: 0.6rem;
 }
@@ -217,8 +217,8 @@ The NOC is one page. Two parts of it are your HOD's rather than yours: that they
   font-weight: 500;
 }
 .gv-seg-1 { background: #1a1a1a; }
-.gv-seg-2 { background: #e07020; }
-.gv-seg-3 { background: #3ab7bf; }
+.gv-seg-2 { background: #e48f38; }
+.gv-seg-3 { background: #42a6ac; }
 .gv-seg-4 { background: #8a5ab7; }
 
 .gv-steps {
@@ -232,7 +232,7 @@ The NOC is one page. Two parts of it are your HOD's rather than yours: that they
   color: #1a1a1a;
   margin-bottom: 0.4rem;
 }
-.gv-step-head i { color: #e07020; margin-right: 0.35rem; }
+.gv-step-head i { color: #e48f38; margin-right: 0.35rem; }
 .gv-step p {
   font-size: 0.82rem;
   color: #555;
@@ -243,7 +243,7 @@ The NOC is one page. Two parts of it are your HOD's rather than yours: that they
 .gv-note {
   font-size: 0.88rem;
   color: #444;
-  border-left: 3px solid #e07020;
+  border-left: 3px solid #e48f38;
   padding: 0.2rem 0 0.2rem 1rem;
   margin: 1.8rem 0 0 0;
 }
@@ -262,7 +262,7 @@ The NOC is one page. Two parts of it are your HOD's rather than yours: that they
   flex-direction: column;
   position: relative;
 }
-.gv-j i { font-size: 1.3rem; color: #e07020; margin-bottom: 0.5rem; }
+.gv-j i { font-size: 1.3rem; color: #e48f38; margin-bottom: 0.5rem; }
 .gv-j-t { font-weight: 600; font-size: 0.9rem; color: #1a1a1a; }
 .gv-j-d { font-size: 0.76rem; color: #666; line-height: 1.5; margin-top: 0.2rem; }
 
