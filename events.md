@@ -22,6 +22,18 @@ permalink: /events/
 
 ---
 
+## Upcoming session
+
+### VTalk-10 — What Chess Teaches About Teaching
+**V-Talk with Jyotsna Lakshminarayanam** — International Medalist, FIDE Master, and chess coach
+
+**When:** Friday, September 11, 2026 &middot; 8:00 PM IST
+**Where:** [Join the session &rarr;](REPLACE_WITH_MEETING_LINK)
+
+Join us on this interactive session.
+
+---
+
 ## Types of events we run
 
 **Faculty Development Programs (FDPs)**
