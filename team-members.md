@@ -20,9 +20,9 @@ quote_author: "Henry Ford"
 <div class="team-section">
   <h2 class="team-section-h">Principal Investigator</h2>
   <div class="team-pi-card">
-    {% include team-photo.html name="s-r-s-iyengar" alt="Prof. Sudarshan Iyengar" class="team-pi-photo" %}
+    {% include team-photo.html name="s-r-s-iyengar" alt="Dr. Sudarshan Iyengar" class="team-pi-photo" %}
     <div class="team-pi-body">
-      <div class="team-pi-name">Prof. Sudarshan Iyengar</div>
+      <div class="team-pi-name">Dr. Sudarshan Iyengar</div>
       <div class="team-pi-role">Principal Investigator &amp; Group Lead</div>
       <p class="team-pi-bio">Associate Professor at IIT Ropar (CSE), Ph.D. from IISc. His NPTEL course <em>The Joy of Computing using Python</em> is one of the most-enrolled CS courses on the platform. Director of the AI Centre of Excellence at Annam.AI, IIT Ropar, and founding faculty of the IIT Madras Online BS Programme. His research sits at the intersection of social computing, collective intelligence, and crowdsourced knowledge — work that directly informs how Vicharanashala thinks about learning at scale.</p>
       <div class="team-tags">
@@ -44,8 +44,8 @@ quote_author: "Henry Ford"
   <div class="team-sq-grid">
 
     <div class="team-sq-card">
-      {% include team-photo.html name="aditya-bmv" alt="Aditya BMV" %}
-      <div class="team-sq-name">Aditya BMV</div>
+      {% include team-photo.html name="aditya-bmv" alt="Mr. Aditya BMV" %}
+      <div class="team-sq-name">Mr. Aditya BMV</div>
       <div class="team-sq-role">Project Associate (Product Development)</div>
       <div class="team-tags">
         <span class="team-tag">ViBe</span>
@@ -57,8 +57,8 @@ quote_author: "Henry Ford"
     </div>
 
     <div class="team-sq-card">
-      {% include team-photo.html name="jinal-gupta" alt="Jinal Gupta" %}
-      <div class="team-sq-name">Jinal Gupta</div>
+      {% include team-photo.html name="jinal-gupta" alt="Ms. Jinal Gupta" %}
+      <div class="team-sq-name">Ms. Jinal Gupta</div>
       <div class="team-sq-role">Project Associate &amp; Research Scholar</div>
       <div class="team-tags">
         <span class="team-tag">Tenali</span>
@@ -70,8 +70,8 @@ quote_author: "Henry Ford"
     </div>
 
     <div class="team-sq-card">
-      {% include team-photo.html name="meenakshi-v" alt="Meenakshi V" %}
-      <div class="team-sq-name">Meenakshi V</div>
+      {% include team-photo.html name="meenakshi-v" alt="Ms. Meenakshi V" %}
+      <div class="team-sq-name">Ms. Meenakshi V</div>
       <div class="team-sq-role">AI Skill Development Head &amp; Research Scholar</div>
       <div class="team-tags">
         <span class="team-tag">ViBe</span>
@@ -79,6 +79,20 @@ quote_author: "Henry Ford"
       </div>
       <div class="team-links">
         <a href="https://github.com/MeenakshiArunsankar" class="team-link team-link-gh" target="_blank" rel="noopener"><i class="ph ph-github-logo"></i> MeenakshiArunsankar</a>
+      </div>
+    </div>
+
+    <div class="team-sq-card">
+      {% include team-photo.html name="nakul-pise" alt="Mr. Nakul Pise" %}
+      <div class="team-sq-name">Mr. Nakul Pise</div>
+      <div class="team-sq-role">Pre-doctoral Fellow (NPTEL)</div>
+      <div class="team-tags">
+        <span class="team-tag">Research</span>
+        <span class="team-tag">CS Concept Laboratory</span>
+      </div>
+      <div class="team-links">
+        <a href="https://www.linkedin.com/in/nakul0005" class="team-link team-link-li" target="_blank" rel="noopener"><i class="ph ph-linkedin-logo"></i> nakul0005</a>
+        <a href="https://github.com/Nakul03" class="team-link team-link-gh" target="_blank" rel="noopener"><i class="ph ph-github-logo"></i> Nakul03</a>
       </div>
     </div>
 
@@ -97,8 +111,8 @@ quote_author: "Henry Ford"
     </div>
 
     <div class="team-sq-card">
-      {% include team-photo.html name="prakash-hegade" alt="Prakash Hegade" %}
-      <div class="team-sq-name">Prakash Hegade</div>
+      {% include team-photo.html name="prakash-hegade" alt="Mr. Prakash Hegade" %}
+      <div class="team-sq-name">Mr. Prakash Hegade</div>
       <div class="team-sq-role">Instruction Systems Scientist</div>
       <div class="team-tags">
         <span class="team-tag">AI Courses</span>
@@ -111,8 +125,8 @@ quote_author: "Henry Ford"
     </div>
 
     <div class="team-sq-card">
-      {% include team-photo.html name="rohit-sharma" alt="Rohit Sharma" %}
-      <div class="team-sq-name">Rohit Sharma</div>
+      {% include team-photo.html name="rohit-sharma" alt="Mr. Rohit Sharma" %}
+      <div class="team-sq-name">Mr. Rohit Sharma</div>
       <div class="team-sq-role">Research Scholar</div>
       <div class="team-tags">
         <span class="team-tag">Spandan</span>
@@ -125,8 +139,8 @@ quote_author: "Henry Ford"
     </div>
 
     <div class="team-sq-card">
-      {% include team-photo.html name="sakshi-sharma" alt="Sakshi Sharma" %}
-      <div class="team-sq-name">Sakshi Sharma</div>
+      {% include team-photo.html name="sakshi-sharma" alt="Ms. Sakshi Sharma" %}
+      <div class="team-sq-name">Ms. Sakshi Sharma</div>
       <div class="team-sq-role">Research Scholar</div>
       <div class="team-tags">
         <span class="team-tag">Spurti</span>
@@ -135,6 +149,20 @@ quote_author: "Henry Ford"
       <div class="team-links">
         <a href="https://www.linkedin.com/in/sakshivk/" class="team-link team-link-li" target="_blank" rel="noopener"><i class="ph ph-linkedin-logo"></i> sakshivk</a>
         <a href="https://github.com/sakshivk/" class="team-link team-link-gh" target="_blank" rel="noopener"><i class="ph ph-github-logo"></i> sakshivk</a>
+      </div>
+    </div>
+
+    <div class="team-sq-card">
+      {% include team-photo.html name="shivam-gurjar" alt="Mr. Shivam Gurjar" %}
+      <div class="team-sq-name">Mr. Shivam Gurjar</div>
+      <div class="team-sq-role">Pre-doctoral Fellow (NPTEL)</div>
+      <div class="team-tags">
+        <span class="team-tag">Research</span>
+        <span class="team-tag">CS Concept Laboratory</span>
+      </div>
+      <div class="team-links">
+        <a href="https://www.linkedin.com/in/shivam-gurjar-5b45b8238" class="team-link team-link-li" target="_blank" rel="noopener"><i class="ph ph-linkedin-logo"></i> shivam-gurjar</a>
+        <a href="https://github.com/Shivam-Gurjar691" class="team-link team-link-gh" target="_blank" rel="noopener"><i class="ph ph-github-logo"></i> Shivam-Gurjar691</a>
       </div>
     </div>
 
@@ -147,26 +175,26 @@ quote_author: "Henry Ford"
   <div class="team-sq-grid">
 
     <div class="team-sq-card team-sq-card-ops">
-      {% include team-photo.html name="atul" alt="Atul" %}
-      <div class="team-sq-name">Atul</div>
+      {% include team-photo.html name="atul" alt="Mr. Atul Kumar" %}
+      <div class="team-sq-name">Mr. Atul Kumar</div>
       <div class="team-sq-role">Video Editor</div>
     </div>
 
     <div class="team-sq-card team-sq-card-ops">
-      {% include team-photo.html name="harshdeep" alt="Harshdeep" %}
-      <div class="team-sq-name">Harshdeep</div>
+      {% include team-photo.html name="harshdeep" alt="Ms. Harshdeep" %}
+      <div class="team-sq-name">Ms. Harshdeep</div>
       <div class="team-sq-role">Operations &amp; Coordination</div>
     </div>
 
     <div class="team-sq-card team-sq-card-ops">
-      {% include team-photo.html name="meenakshi-kalotra" alt="Meenakshi Kalotra" %}
-      <div class="team-sq-name">Meenakshi Kalotra</div>
+      {% include team-photo.html name="meenakshi-kalotra" alt="Ms. Meenakshi Kalotra" %}
+      <div class="team-sq-name">Ms. Meenakshi Kalotra</div>
       <div class="team-sq-role">Operations &amp; Support</div>
     </div>
 
     <div class="team-sq-card team-sq-card-ops">
-      {% include team-photo.html name="rajan-gupta" alt="Rajan Gupta" %}
-      <div class="team-sq-name">Rajan Gupta</div>
+      {% include team-photo.html name="rajan-gupta" alt="Mr. Rajan Gupta" %}
+      <div class="team-sq-name">Mr. Rajan Gupta</div>
       <div class="team-sq-role">Operations &amp; Support</div>
     </div>
 

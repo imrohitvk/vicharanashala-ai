@@ -1,0 +1,24 @@
+# Datasets published by the lab, shown on the Research page (research_publications.md).
+# Listed in order of upload, oldest first. Add a new dataset at the BOTTOM by copying one block.
+# Leave a platform line out if the dataset is not on that platform.
+
+- name: "Continuous Evaluation in Programming Course: Faculty and Student Logs"
+  description: "Faculty and student logs from a first-year programming course (July to December 2023), in which students worked through a ladder of 60 programming tasks."
+  meta: "2 tables · MIT licence"
+  kaggle: "https://www.kaggle.com/datasets/vicharanashala/continuous-evaluation-in-programming-course-logs"
+  huggingface: "https://huggingface.co/datasets/vicharanashala-org/continuous-evaluation-in-programming-course-logs"
+  aikosh: "https://aikosh.indiaai.gov.in/home/datasets/details/continuous_evaluation_in_programming_course_faculty_and_student_logs.html"
+
+- name: "Online Live-Polling Dataset"
+  description: "Attendance and live-poll records from 47 online sessions of an internship programme (May to July 2026), with 604 polls and 340,668 responses from anonymised participants."
+  meta: "6 tables · 2,821 participants · MIT licence"
+  kaggle: "https://www.kaggle.com/datasets/vicharanashala/online-live-polling-dataset"
+  huggingface: "https://huggingface.co/datasets/vicharanashala-org/Online_Live_Polling_Dataset"
+  aikosh: "https://aikosh.indiaai.gov.in/home/datasets/details/online_live_polling_dataset.html"
+
+- name: "Participation Points in a Remote Internship"
+  description: "Participation points, attendance, polls and badges of 4,476 learners in a large online internship programme, 15 May to 14 September 2026."
+  meta: "8 tables · 4,476 learners · MIT licence"
+  kaggle: "https://www.kaggle.com/datasets/vicharanashala/participation-points-in-a-remote-internship"
+  huggingface: "https://huggingface.co/datasets/vicharanashala-org/participation-points-remote-internship"
+  aikosh: "https://aikosh.indiaai.gov.in/home/datasets/details/participation_points_in_a_remote_internship.html"

@@ -18,10 +18,12 @@ your card on the Team page picks it up by itself.
 | Aditya BMV | `aditya-bmv.jpg` | |
 | Jinal Gupta | `jinal-gupta.jpg` | yes |
 | Meenakshi V | `meenakshi-v.jpg` | |
+| Nakul Pise | `nakul-pise.png` | yes |
 | Dr. Pavani Ayinampudi | `pavani-ayinampudi.jpg` | yes |
 | Prakash Hegade | `prakash-hegade.jpg` | |
 | Rohit Sharma | `rohit-sharma.jpg` | |
 | Sakshi Sharma | `sakshi-sharma.jpg` | |
+| Shivam Gurjar | `shivam-gurjar.png` | yes |
 | Atul | `atul.jpg` | |
 | Harshdeep | `harshdeep.jpg` | |
 | Meenakshi Kalotra | `meenakshi-kalotra.jpg` | |

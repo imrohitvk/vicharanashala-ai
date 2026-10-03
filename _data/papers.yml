@@ -1,0 +1,31 @@
+# Working papers shown on the Research page (research_publications.md), in order of arXiv upload,
+# OLDEST first. Add a new paper at the BOTTOM by copying one block. `arxiv` is the arXiv identifier only
+# (e.g. 2610.01020); the page builds the link https://arxiv.org/abs/<id> from it. arXiv ids are
+# assigned in submission order, so sorting by id = sorting by upload time.
+
+- title: "From Early Participation to Later Completion: Evidence from a Large-Scale Self-Paced Learning Programme"
+  arxiv: "2609.34953"
+
+- title: "Characterizing Questioning Patterns and Student Engagement Through Contextual Analysis of Real-Time Classroom Interactions"
+  arxiv: "2609.38907"
+
+- title: "Measuring Student Self-Assessment against Viva-Demonstrated Mastery in a Large First-Year Programming Course"
+  arxiv: "2609.38951"
+
+- title: "An Audit of Measurement Quality and Answer Bias in a Large Classroom-Poll Corpus"
+  arxiv: "2609.38959"
+
+- title: "What Students Actually Ask: Demand Structure and Automation Potential in a Hybrid Support System"
+  arxiv: "2609.38967"
+
+- title: "Insights on Student Learning from Live Classroom Polls: More Than Right or Wrong"
+  arxiv: "2609.38969"
+
+- title: "When Attention Guardrails Become Barriers to Learning: Towards the Tipping Point"
+  arxiv: "2609.39023"
+
+- title: "Engagement-Led Segmentation of Gamified Participation Data in a Large-Scale Remote Internship: A Mixed-Methods Study"
+  arxiv: "2609.39750"
+
+- title: "Scaling Peer Assessments: An Integrity Report from a Large Engineering Internship"
+  arxiv: "2610.01020"
