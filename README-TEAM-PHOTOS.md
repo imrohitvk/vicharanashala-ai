@@ -14,7 +14,7 @@ your card on the Team page picks it up by itself.
 
 | Person | File name | Uploaded? |
 |---|---|---|
-| Prof. Sudarshan Iyengar | `s-r-s-iyengar.jpg` | yes |
+| Dr. Sudarshan Iyengar | `s-r-s-iyengar.jpg` | yes |
 | Aditya BMV | `aditya-bmv.jpg` | |
 | Jinal Gupta | `jinal-gupta.jpg` | yes |
 | Meenakshi V | `meenakshi-v.jpg` | |
@@ -24,7 +24,7 @@ your card on the Team page picks it up by itself.
 | Rohit Sharma | `rohit-sharma.jpg` | |
 | Sakshi Sharma | `sakshi-sharma.jpg` | |
 | Shivam Gurjar | `shivam-gurjar.png` | yes |
-| Atul | `atul.jpg` | |
+| Atul Kumar | `atul.jpg` | |
 | Harshdeep | `harshdeep.jpg` | |
 | Meenakshi Kalotra | `meenakshi-kalotra.jpg` | |
 | Rajan Gupta | `rajan-gupta.jpg` | |
