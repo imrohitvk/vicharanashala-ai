@@ -133,6 +133,16 @@
   blurb: "Explore how emotional intelligence helps understand emotions, strengthen communication, build relationships, and enhance professional effectiveness."
   image: "/assets/images/events/v-talk-11.jpg"
 
+- title: "V-Talk 12 — My Journey in Deep Tech: Why India's Future Relies on Cultivating, Not Copying"
+  date: "2026-10-09"
+  time: "8:00 PM IST"
+  kind: "V-Talk"
+  speaker: "Dr. Jagadeesh Gandla — Program Director, GROWW iNVENT, IIT Bombay, and deep-tech ecosystem builder with expertise in venture acceleration and innovation"
+  where: "Online"
+  register_url: "https://forms.gle/C3AxDbxK5kpEuJfC7"
+  blurb: "A journey through India's deep-tech ecosystem and its emerging opportunities. Exploring the importance of building original technologies rather than simply replicating existing solutions. Insights into nurturing talent, innovation, and a strong deep-tech culture for India's future."
+  image: "/assets/images/events/v-talk-12.jpg"
+
 - title: "CBPAI Foundation - Cohort 5"
   date: "2026-09-07"
   end: "2026-09-11"
