@@ -143,6 +143,18 @@
   blurb: "A journey through India's deep-tech ecosystem and its emerging opportunities. Exploring the importance of building original technologies rather than simply replicating existing solutions. Insights into nurturing talent, innovation, and a strong deep-tech culture for India's future."
   image: "/assets/images/events/v-talk-12.jpg"
 
+- title: "V-Talk 13 — Food and Its Role in Health and Disease"
+  date: "2026-10-23"
+  time: "8:00 PM IST"
+  kind: "V-Talk"
+  speaker: "Dr. Raga Deepthi Ediga — Gut Microbiome Scientist, Clinical Nutritionist & Co-founder, ForHerWellbeing"
+  where: "Online"
+  register_url: "https://zoom.us/meeting/register/BpREEQy8TsmhoHL-6BVrcA"
+  register_label: "Meeting Link"
+  questions_url: "https://forms.gle/fUctoATiddtDMNpR6"
+  blurb: "Explore how food and nutrition influence overall health, support bodily functions, and help prevent or manage various diseases."
+  image: "/assets/images/events/v-talk-13.png"
+
 - title: "CBPAI Foundation - Cohort 5"
   date: "2026-09-07"
   end: "2026-09-11"

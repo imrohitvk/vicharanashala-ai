@@ -30,7 +30,7 @@ permalink: /events/
       {% if e.blurb %}<p class="ev-blurb">{{ e.blurb }}</p>{% endif %}
     </div>
     {% if e.register_url and e.register_url != "" %}
-    <div class="ev-card-cta"><a href="{{ e.register_url }}" target="_blank" rel="noopener" class="idt-btn"><i class="ph ph-arrow-up-right"></i> Register / Join</a></div>
+    <div class="ev-card-cta" style="display:flex; flex-wrap:wrap; gap:0.4rem;"><a href="{{ e.register_url }}" target="_blank" rel="noopener" class="idt-btn"><i class="ph ph-arrow-up-right"></i> {{ e.register_label | default: "Register / Join" }}</a>{% if e.questions_url and e.questions_url != "" %}<a href="{{ e.questions_url }}" target="_blank" rel="noopener" class="idt-btn"><i class="ph ph-chats-circle"></i> Join the Conversation</a>{% endif %}</div>
     {% endif %}
   </div>
 {% endfor %}
@@ -103,7 +103,13 @@ permalink: /events/
     if (e.where) m += '<span><i class="ph ph-map-pin"></i> ' + esc(e.where) + '</span>';
     return m;
   }
-  function btn(e) { return e.register_url ? '<a class="idt-btn" href="' + esc(e.register_url) + '" target="_blank" rel="noopener"><i class="ph ph-arrow-up-right"></i> Register / Join</a>' : ''; }
+  function btn(e) {
+    if (!e.register_url) return '';
+    var reg = '<a class="idt-btn" href="' + esc(e.register_url) + '" target="_blank" rel="noopener"><i class="ph ph-arrow-up-right"></i> ' + esc(e.register_label || 'Register / Join') + '</a>';
+    if (!e.questions_url) return reg;
+    return '<div style="display:flex; flex-wrap:wrap; gap:0.4rem;">' + reg
+      + '<a class="idt-btn" href="' + esc(e.questions_url) + '" target="_blank" rel="noopener"><i class="ph ph-chats-circle"></i> Join the Conversation</a></div>';
+  }
 
   function calEv(e) {
     return '<div class="cal-ev" style="border-left-color:' + e._color + '">'
