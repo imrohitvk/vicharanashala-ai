@@ -42,3 +42,12 @@
   .ann .date { color: var(--muted); font: 600 14px system-ui, sans-serif; margin: 0; }
   .ann h3 { margin: 4px 0 6px; }
   .ann.past { border-left-color: var(--line); }
+  /* Top bar with course tabs, modelled on the GE103 site header */
+  .topbar { border-top: 5px solid var(--accent); border-bottom: 1px solid var(--line); background: var(--card); }
+  .topbar-in { max-width: 860px; margin: 0 auto; padding: 0 16px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 4px 20px; min-height: 55px; }
+  .site-title { font: 300 22px/1.4 system-ui, sans-serif; color: var(--text); text-decoration: none; padding: 10px 0; }
+  .site-title:hover { text-decoration: none; color: var(--accent); }
+  .tabs { display: flex; flex-wrap: wrap; gap: 4px 20px; font: 15px system-ui, sans-serif; padding: 10px 0; }
+  .tabs a { color: var(--text); text-decoration: none; padding-bottom: 2px; border-bottom: 2px solid transparent; }
+  .tabs a:hover { color: var(--accent); }
+  .tabs a[aria-current="page"] { color: var(--accent); border-bottom-color: var(--accent); font-weight: 600; }
