@@ -21,7 +21,7 @@ The underlying belief: in education, questions are as valuable as answers. Vi-Pr
 
 {%- comment -%}
   Articles are listed automatically from the _prayoga/ folder, newest first.
-  To add one, add a single markdown file there — see README-VI-PRAYOGA.md. Nothing here needs editing.
+  To add one, add a single markdown file there — see docs/README-VI-PRAYOGA.md. Nothing here needs editing.
 {%- endcomment -%}
 {%- assign articles = site.prayoga | sort: "date" | reverse -%}
 {%- if articles.size > 0 %}

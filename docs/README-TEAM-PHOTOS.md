@@ -14,12 +14,12 @@ your card on the Team page picks it up by itself.
 
 | Person | File name | Uploaded? |
 |---|---|---|
-| Dr. Sudarshan Iyengar | `s-r-s-iyengar.jpg` | yes |
+| Sudarshan Iyengar | `s-r-s-iyengar.jpg` | yes |
 | Aditya BMV | `aditya-bmv.jpg` | |
 | Jinal Gupta | `jinal-gupta.jpg` | yes |
 | Meenakshi V | `meenakshi-v.jpg` | |
 | Nakul Pise | `nakul-pise.png` | yes |
-| Dr. Pavani Ayinampudi | `pavani-ayinampudi.jpg` | yes |
+| Pavani Ayinampudi | `pavani-ayinampudi.jpg` | yes |
 | Prakash Hegade | `prakash-hegade.jpg` | |
 | Rohit Sharma | `rohit-sharma.jpg` | |
 | Sakshi Sharma | `sakshi-sharma.jpg` | |
@@ -52,7 +52,7 @@ without getting in each other's way.
 
 ## Someone new joining the team?
 
-A new person needs a card first — that one does need an edit to `team-members.md`
+A new person needs a card first — that one does need an edit to `pages/team-members.md`
 (copy an existing card and change the name). Put
 `{% include team-photo.html name="their-name" alt="Their Name" %}` where the
 photo goes, and add them to the table above.
