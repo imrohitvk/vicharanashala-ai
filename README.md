@@ -1,5 +1,14 @@
 # Vicharanashala Website
 
+## Repository layout
+
+- `index.md`: the homepage. `pages/`: all other pages (each sets its own `permalink:`, so URLs do not include `pages/`).
+- `_data/`: editable content (events, team, papers…), safe to edit in the GitHub browser.
+- `_layouts/`, `_includes/`, `_sass/`, `assets/`: site templates, styles, images.
+- `_projects/`, `_initiatives/`, `_logs/`, `_prayoga/`: collections (one file per item).
+- `docs/`: team how-to notes (team photos, Vi-Prayoga articles) and the changelog. Not published.
+- `CNAME` must stay at the root (custom domain). `README.md`, `CLAUDE.md`, `LICENSE` and `docs/` are kept off the live site by `exclude:` in `_config.yml`.
+
 This repository is used to set up and manage the official Vicharanashala website codebase on GitHub.
 
 We are migrating the existing React website into this repository and will host the live site on:

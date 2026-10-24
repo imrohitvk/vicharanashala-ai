@@ -20,18 +20,34 @@ collections:
     permalink: /logs/vi-prayoga/:slug/
 
 header_pages:
-  - ourstory.md
-  - products.md
-  - lab_initiatives.md
-  - national_initiatives.md
-  - events.md
-  - openings.md
-  - vichara_logs.md
-  - research_publications.md
-  - contact.md
-  - team-members.md
+  - pages/ourstory.md
+  - pages/products.md
+  - pages/lab_initiatives.md
+  - pages/national_initiatives.md
+  - pages/events.md
+  - pages/openings.md
+  - pages/vichara_logs.md
+  - pages/research_publications.md
+  - pages/contact.md
+  - pages/team-members.md
 
 linkedin_username: vicharanashala
 
 plugins:
   - jekyll-feed
+
+# Files and folders that are NOT published on the website.
+# This list replaces Jekyll's built-in one, so the defaults (Gemfile ... vendor) are listed again.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+  - CLAUDE.md
+  - CLAUDE.local.md
+  - LICENSE
+  - docs/

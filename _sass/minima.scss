@@ -3492,7 +3492,7 @@ $fln-accent:    #e48f38;   // brand orange (single accent)
 .idt-cta .idt-btn:visited { color: #1a1a1a; }
 .idt-cta .idt-btn:hover { color: #1a1a1a; }
 
-// ── Upcoming-event highlight cards (events.md, driven by _data/events.yml) ──
+// ── Upcoming-event highlight cards (pages/events.md, driven by _data/events.yml) ──
 .ev-list { display: flex; flex-direction: column; gap: 1rem; margin: 1.6rem 0; }
 .ev-card {
   border: 1px solid #e2e2de;
@@ -3522,7 +3522,7 @@ $fln-accent:    #e48f38;   // brand orange (single accent)
 .ev-card-cta { flex-shrink: 0; }
 .ev-empty { font-size: 0.9rem; color: #666; margin: 1.4rem 0; }
 
-// ── On-site month calendar (events.md, driven by _data/events.yml, vanilla JS) ──
+// ── On-site month calendar (pages/events.md, driven by _data/events.yml, vanilla JS) ──
 .cal { border: 1px solid #e2e2de; border-radius: 10px; background: #fff; padding: 1.3rem; margin: 1.6rem 0; }
 .cal-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem; }
 .cal-month { font-weight: 600; font-size: 1.05rem; color: #1a1a1a; }

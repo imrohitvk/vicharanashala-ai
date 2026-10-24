@@ -1,4 +1,4 @@
-# Working papers shown on the Research page (research_publications.md), in order of arXiv upload,
+# Working papers shown on the Research page (pages/research_publications.md), in order of arXiv upload,
 # OLDEST first. Add a new paper at the BOTTOM by copying one block. `arxiv` is the arXiv identifier only
 # (e.g. 2610.01020); the page builds the link https://arxiv.org/abs/<id> from it. arXiv ids are
 # assigned in submission order, so sorting by id = sorting by upload time.

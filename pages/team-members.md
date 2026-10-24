@@ -14,7 +14,7 @@ quote_author: "Henry Ford"
 
 {% include page-quote.html %}
 
-<!-- Photos: upload assets/images/team/<name>.jpg — the slot fills itself. Names are listed in README-TEAM-PHOTOS.md. -->
+<!-- Photos: upload assets/images/team/<name>.jpg — the slot fills itself. Names are listed in docs/README-TEAM-PHOTOS.md. -->
 
 <!-- Team — Sudarshan Iyengar first, then alphabetical by first name; square cards -->
 <div class="team-section">
