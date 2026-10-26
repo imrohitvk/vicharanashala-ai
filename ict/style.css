@@ -36,6 +36,10 @@
   ul { padding-left: 22px; }
   li { margin: 4px 0; }
   .tb { background: var(--soft); border-radius: 6px; padding: 8px 12px; margin: 6px 0; }
+  details.guide { border-left: 3px solid var(--accent); margin: 4px 0 14px; padding: 2px 0 2px 14px; }
+  details.guide summary { cursor: pointer; color: var(--accent); font: 600 15px/1.6 system-ui, sans-serif; }
+  details.guide[open] summary { margin-bottom: 4px; }
+  details.guide p, details.guide li { font-size: 16px; }
   .note { color: var(--muted); font-size: 15px; }
   footer { margin-top: 48px; color: var(--muted); font-size: 14px; border-top: 1px solid var(--line); padding-top: 12px; }
   .ann { border-left: 4px solid var(--accent); padding: 4px 0 4px 14px; margin: 18px 0; }
