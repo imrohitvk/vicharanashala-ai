@@ -10,6 +10,12 @@ permalink: /events/
   <p class="audience-hero-p">Every event we run is designed to move education forward — workshops, Faculty Development Programs, product launches, and community gatherings. See what is coming up below, and browse the calendar.</p>
 </div>
 
+<div id="ev-ongoing-wrap" style="display:none">
+<h2 id="ongoing">Ongoing</h2>
+<!-- Multi-day programmes that have started and not yet ended. Filled by the script below; hidden when empty. -->
+<div class="ev-list" id="ev-ongoing"></div>
+</div>
+
 ## Upcoming
 
 <!-- Edit events in _data/events.yml — no code needed. They show here and on the calendar.
@@ -21,7 +27,7 @@ permalink: /events/
   <div class="ev-card">
     {% if e.image %}<a class="ev-card-img" href="{{ e.image | relative_url }}" target="_blank" rel="noopener"><img src="{{ e.image | relative_url }}" alt="{{ e.title }} poster" loading="lazy"></a>{% endif %}
     <div class="ev-card-main">
-      {% if e.kind %}<span class="ev-kind">{{ e.kind }}</span>{% endif %}
+      {% if e.kind %}<span class="ev-kind">{{ e.kind }}</span>{% endif %}{% if e.status %}<span class="ev-status">{{ e.status }}</span>{% endif %}
       <div class="ev-title">{{ e.title }}</div>
       {% if e.speaker %}<div class="ev-speaker">{{ e.speaker }}</div>{% endif %}
       <div class="ev-meta">
@@ -29,9 +35,10 @@ permalink: /events/
         {% if e.where %}<span><i class="ph ph-map-pin"></i> {{ e.where }}</span>{% endif %}
       </div>
       {% if e.blurb %}<p class="ev-blurb">{{ e.blurb }}</p>{% endif %}
+      {% if e.highlights %}<ul class="ev-hl">{% for h in e.highlights %}<li><strong>{{ h.label }}:</strong> {{ h.text }}</li>{% endfor %}</ul>{% endif %}
     </div>
     {% if e.register_url and e.register_url != "" %}
-    <div class="ev-card-cta" style="display:flex; flex-wrap:wrap; gap:0.4rem;"><a href="{{ e.register_url }}" target="_blank" rel="noopener" class="idt-btn"><i class="ph ph-arrow-up-right"></i> {{ e.register_label | default: "Register / Join" }}</a>{% if e.questions_url and e.questions_url != "" %}<a href="{{ e.questions_url }}" target="_blank" rel="noopener" class="idt-btn"><i class="ph ph-chats-circle"></i> Join the Conversation</a>{% endif %}</div>
+    <div class="ev-card-cta" style="display:flex; flex-wrap:wrap; gap:0.4rem;"><a href="{{ e.register_url }}" target="_blank" rel="noopener" class="idt-btn"><i class="ph ph-arrow-up-right"></i> {{ e.register_label | default: "Register / Join" }}</a>{% if e.questions_url and e.questions_url != "" %}<a href="{{ e.questions_url }}" target="_blank" rel="noopener" class="idt-btn"><i class="ph {{ e.questions_icon | default: 'ph-chats-circle' }}"></i> {{ e.questions_label | default: 'Join the Conversation' }}</a>{% endif %}</div>
     {% endif %}
   </div>
 {% endfor %}
@@ -109,13 +116,14 @@ permalink: /events/
     var reg = '<a class="idt-btn" href="' + esc(e.register_url) + '" target="_blank" rel="noopener"><i class="ph ph-arrow-up-right"></i> ' + esc(e.register_label || 'Register / Join') + '</a>';
     if (!e.questions_url) return reg;
     return '<div style="display:flex; flex-wrap:wrap; gap:0.4rem;">' + reg
-      + '<a class="idt-btn" href="' + esc(e.questions_url) + '" target="_blank" rel="noopener"><i class="ph ph-chats-circle"></i> Join the Conversation</a></div>';
+      + '<a class="idt-btn" href="' + esc(e.questions_url) + '" target="_blank" rel="noopener"><i class="ph ' + esc(e.questions_icon || 'ph-chats-circle') + '"></i> ' + esc(e.questions_label || 'Join the Conversation') + '</a></div>';
   }
 
   function calEv(e) {
     return '<div class="cal-ev" style="border-left-color:' + e._color + '">'
       + (e.image ? '<img class="cal-ev-img" src="' + esc((window.VLED_BASEURL || '') + e.image) + '" alt="" loading="lazy">' : '')
       + (e.kind ? '<span class="ev-kind">' + esc(e.kind) + '</span>' : '')
+      + (e.status ? '<span class="ev-status">' + esc(e.status) + '</span>' : '')
       + '<div class="cal-ev-title">' + esc(e.title) + '</div>'
       + (e.speaker ? '<div class="cal-ev-sp">' + esc(e.speaker) + '</div>' : '')
       + '<div class="cal-ev-meta">' + metaHTML(e, false) + '</div>'
@@ -127,19 +135,29 @@ permalink: /events/
       + (img ? '<a class="ev-card-img" href="' + img + '" target="_blank" rel="noopener"><img src="' + img + '" alt="' + esc(e.title) + ' poster" loading="lazy"></a>' : '')
       + '<div class="ev-card-main">'
       + (e.kind ? '<span class="ev-kind">' + esc(e.kind) + '</span>' : '')
+      + (e.status ? '<span class="ev-status">' + esc(e.status) + '</span>' : '')
       + '<div class="ev-title">' + esc(e.title) + '</div>'
       + (e.speaker ? '<div class="ev-speaker">' + esc(e.speaker) + '</div>' : '')
       + '<div class="ev-meta">' + metaHTML(e, true) + '</div>'
       + (e.blurb ? '<p class="ev-blurb">' + esc(e.blurb) + '</p>' : '')
+      + (e.highlights && e.highlights.length ? '<ul class="ev-hl">' + e.highlights.map(function (h) { return '<li><strong>' + esc(h.label) + ':</strong> ' + esc(h.text) + '</li>'; }).join('') + '</ul>' : '')
       + '</div>'
       + (e.register_url ? '<div class="ev-card-cta">' + btn(e) + '</div>' : '')
       + '</div>';
   }
   function dayHeading(k) { var d = parseYMD(k); return '<div class="cal-detail-h">' + WD[d.getDay()] + ', ' + d.getDate() + ' ' + MONTHS[d.getMonth()] + ' ' + d.getFullYear() + '</div>'; }
 
+  function isOngoing(e) { return e._multi && e._start <= today && e._end >= today; }
+  function renderOngoing() {
+    var wrap = document.getElementById('ev-ongoing-wrap'), el = document.getElementById('ev-ongoing'); if (!wrap || !el) return;
+    var on = events.filter(isOngoing).sort(function (a, b) { return a._end - b._end; });
+    if (!on.length) { wrap.style.display = 'none'; return; }
+    el.innerHTML = on.map(upCard).join('');
+    wrap.style.display = '';
+  }
   function renderUpcoming() {
     var el = document.getElementById('ev-upcoming'); if (!el) return;
-    var up = events.filter(function (e) { return e._start >= today; }).sort(function (a, b) {
+    var up = events.filter(function (e) { return e._start >= today && !isOngoing(e); }).sort(function (a, b) {
       var ak = keyOfDate(a._start), bk = keyOfDate(b._start);
       if (ak !== bk) return ak < bk ? -1 : 1;
       return timeMin(a.time) - timeMin(b.time);
@@ -184,6 +202,7 @@ permalink: /events/
   document.getElementById('cal-prev').addEventListener('click', function () { if (--viewM < 0) { viewM = 11; viewY--; } closeAll(); render(); });
   document.getElementById('cal-next').addEventListener('click', function () { if (++viewM > 11) { viewM = 0; viewY++; } closeAll(); render(); });
   document.addEventListener('click', closeAll);
+  renderOngoing();
   renderUpcoming();
   render();
 })();
