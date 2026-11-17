@@ -3516,12 +3516,22 @@ $fln-accent:    #e48f38;   // brand orange (single accent)
   color: #e48f38; background: #efefec; border-radius: 4px; padding: 0.15rem 0.5rem;
   margin-bottom: 0.5rem;
 }
+.ev-status {
+  display: inline-block; margin-left: 0.4rem;
+  font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+  color: #fff; background: #c62828; border-radius: 4px; padding: 0.15rem 0.5rem;
+  margin-bottom: 0.5rem;
+}
 .ev-title { font-weight: 600; font-size: 1.02rem; color: #1a1a1a; line-height: 1.35; }
 .ev-speaker { font-size: 0.85rem; color: #555; margin-top: 0.2rem; }
 .ev-meta { display: flex; flex-wrap: wrap; gap: 0.3rem 1.1rem; margin-top: 0.6rem; }
 .ev-meta span { font-size: 0.8rem; color: #666; display: inline-flex; align-items: center; gap: 0.35rem; }
 .ev-meta i { color: #42a6ac; }
 .ev-blurb { font-size: 0.85rem; color: #555; line-height: 1.6; margin: 0.6rem 0 0 0; }
+.ev-hl { list-style: none; margin: 0.7rem 0 0 0; padding: 0; }
+.ev-hl li { position: relative; padding-left: 1rem; font-size: 0.85rem; color: #555; line-height: 1.55; margin: 0 0 0.35rem 0; }
+.ev-hl li::before { content: ""; position: absolute; left: 0; top: 0.55em; width: 6px; height: 6px; border-radius: 50%; background: #e48f38; }
+.ev-hl strong { color: #1a1a1a; font-weight: 600; }
 .ev-card-cta { flex-shrink: 0; }
 .ev-empty { font-size: 0.9rem; color: #666; margin: 1.4rem 0; }
 
