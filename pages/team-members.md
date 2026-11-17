@@ -24,7 +24,7 @@ quote_author: "Henry Ford"
     <div class="team-sq-card">
       {% include team-photo.html name="s-r-s-iyengar" alt="Sudarshan Iyengar" %}
       <div class="team-sq-name">Sudarshan Iyengar</div>
-      <div class="team-sq-role">Associate Professor, IIT Ropar</div>
+      <div class="team-sq-role">Professor, IIT Ropar</div>
       <div class="team-tags">
         <span class="team-tag">Research Direction</span>
         <span class="team-tag">GuruSetu</span>
